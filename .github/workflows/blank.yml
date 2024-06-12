@@ -43,7 +43,7 @@ jobs:
           for i in $(cat list.txt); 
           do
             echo "docker pull registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} "
-            echo "docker tag registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} $i  ;"
+            echo "docker tag registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} $i"
             echo "docker rmi registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/}"
           done
       
