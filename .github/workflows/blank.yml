@@ -26,10 +26,10 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: docker login 
-        run: docker login --username=${{ secrets.USERNAME }} --password=${{ secrets.PASSWORD }} registry.cn-hangzhou.aliyuncs.com
+        run: echo ${{ secrets.PASSWORD }}  | docker login --username=${{ secrets.USERNAME }} --password-stdin registry.cn-hangzhou.aliyuncs.com
 
 
       - name: docker pull and push
-        run: for i in $(cat list.txt); do docker pull $i  ;docker tag $i registry.cn-hangzhou.aliyuncs.com/cachei/$i ; docker push registry.cn-hangzhou.aliyuncs.com/cachei/$i  ; echo "$i has been pushed to registry.cn-hangzhou.aliyuncs.com/cachei." done
+        run: for i in $(cat list.txt); do docker pull $i  ;docker tag $i registry.cn-hangzhou.aliyuncs.com/cachei/$i ; docker push registry.cn-hangzhou.aliyuncs.com/cachei/$i  ; echo "$i has been pushed to registry.cn-hangzhou.aliyuncs.com/cachei." ;  done
       - name: docker logout 
         run: docker logout registry.cn-hangzhou.aliyuncs.com
