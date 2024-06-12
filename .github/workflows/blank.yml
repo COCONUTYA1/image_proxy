@@ -40,7 +40,7 @@ jobs:
         run: docker logout registry.cn-hangzhou.aliyuncs.com
       - name: Generate a pull script
         run: |
-          echo 'echo 密码  | docker login --username=用户名 --password-stdin registry.cn-hangzhou.aliyuncs.com';
+          echo 'echo 密码  | docker login --username=用户名 --password-stdin registry.cn-hangzhou.aliyuncs.com'
           for i in $(cat list.txt); 
           do
             echo "docker pull registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} "
@@ -48,6 +48,6 @@ jobs:
             echo "docker rmi registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/}"
           done
           
-          echo " docker logout registry.cn-hangzhou.aliyuncs.com';
+          echo 'docker logout registry.cn-hangzhou.aliyuncs.com'
       
       
