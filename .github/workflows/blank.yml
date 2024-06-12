@@ -27,7 +27,7 @@ jobs:
 
       
       - name: docker login 
-        run: docker login --username=${{ secrets.USERNAME }} --PASSWORD=${{ secrets.PASSWORD }} registry.cn-hangzhou.aliyuncs.com
+        run: docker login --username=${{ secrets.USERNAME }} --password=${{ secrets.PASSWORD }} registry.cn-hangzhou.aliyuncs.com
 
 
       - name: Run a one-line script
