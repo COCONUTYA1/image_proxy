@@ -9,3 +9,4 @@ do
   docker rmi registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/}
 done
 docker logout registry.cn-hangzhou.aliyuncs.com
+echo $docker logout registry.cn-hangzhou.aliyuncs.com
