@@ -20,8 +20,9 @@ git clone https://github.com/COCONUTYA1/image_proxy
 
 ```
 1、修改list.txt文件
-2、等待github actions
-3、执行pull.sh拉取
+2、提交代码
+3、等待github actions
+4、执行pull.sh拉取
 ```
 
 
