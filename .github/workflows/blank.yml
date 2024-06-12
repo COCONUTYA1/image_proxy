@@ -38,10 +38,11 @@ jobs:
           done
       - name: docker logout 
         run: docker logout registry.cn-hangzhou.aliyuncs.com
-      - name: docker pull
+      - name: pull.sh
         run: |
           for i in $(cat list.txt); 
           do
+            echo 'echo 密码  | docker login --username=用户名 --password-stdin registry.cn-hangzhou.aliyuncs.com'
             echo "docker pull registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} "
             echo "docker tag registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/} $i"
             echo "docker rmi registry.cn-hangzhou.aliyuncs.com/cachei/${i##*/}"
