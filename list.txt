@@ -1,1 +1,8 @@
-nginx
+dqzboyhub/mirror-hub:latest
+dqzboyhub/mirror-gcr:latest
+dqzboyhub/mirror-ghcr:latest
+dqzboyhub/mirror-k8sgcr:lates
+dqzboyhub/mirror-k8sreg:latest
+dqzboyhub/mirror-quay:latest
+dqzboyhub/mirror-elastic:latest
+dqzboyhub/mirror-mcr:latest
