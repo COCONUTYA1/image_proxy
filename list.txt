@@ -1,7 +1,2 @@
-dqzboyhub/mirror-hub:latest
-dqzboyhub/mirror-gcr:latest
-dqzboyhub/mirror-ghcr:latest
-dqzboyhub/mirror-k8sgcr:lates
-dqzboyhub/mirror-k8sreg:latest
-dqzboyhub/mirror-quay:latest
-ghcr.io/wg-easy/wg-easy:15
+mzz2017/v2raya:v2.2.7.4
+
