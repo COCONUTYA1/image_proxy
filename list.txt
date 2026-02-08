@@ -1,2 +1,2 @@
-mzz2017/v2raya:v2.2.7.4
+node:22-bookworm
 
