@@ -1,2 +1,2 @@
-alpine/openclaw:2026.2.3
-
+openclaw/openclaw:latest
+openclaw/openclaw:2026.2.23
