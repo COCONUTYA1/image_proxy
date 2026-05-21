@@ -1,1 +1,1 @@
-nousresearch/hermes-agent:v2026.4.30
+dreamacro/clash@sha256:b73eb19ad410c1ffd985d9e79b1d154eb25d9ce5b9d7c071dde93de7eef79408
