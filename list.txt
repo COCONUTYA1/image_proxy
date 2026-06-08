@@ -1,1 +1,1 @@
-nocodb/nocodb:2026.06.0
+nocodb/nocodb
